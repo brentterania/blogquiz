@@ -1,0 +1,21 @@
+<h1>Hello, Guests!</h1>
+
+<%= form_with scope: :Login, local: true do |form| %>
+  <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p> 
+  
+  <p>
+    <%= form.label :password %><br>
+    <%= form.text_field :password %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+  
+<%= link_to 'Not Yet A Member?', articles_path %>  
+<% end %>
+
+
